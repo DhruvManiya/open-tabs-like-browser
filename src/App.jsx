@@ -102,7 +102,7 @@ function App() {
                       <li
                         key={tab*index}
                         className={` cursor-pointer bg-white ${ 'w-[25%]'} py-4 flex justify-between items-center ${
-                          active != tab ? "border" : "border border-b-0"
+                          active !== tab ? "border" : "border border-b-0"
                         } border-gray-700 mb-[1px]`}
                         onMouseEnter={() => setDisplayClose(tab)}
                         onMouseLeave={() => setDisplayClose(0)}
