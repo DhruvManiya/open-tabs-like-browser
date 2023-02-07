@@ -27,7 +27,11 @@ function App() {
   const [tabs, setTabs] = useState([]);
   const [active, setActive] = useState(tabs[0]);
 
-  const tabWiseData = () => {
+  // const tabWiseData = () => {
+    
+  // };
+
+  useEffect(() => {
     switch (active) {
       case 1:
         setData(eventType1);
@@ -81,10 +85,6 @@ function App() {
         setData([]);
         break;
     }
-  };
-
-  useEffect(() => {
-    tabWiseData();
   }, [active]);
 
 
