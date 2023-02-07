@@ -101,7 +101,7 @@ function App() {
                     return (
                       <li
                         key={tab*index}
-                        className={` cursor-pointer bg-white ${ 'w-[25%]'} py-4 flex justify-between items-center ${
+                        className={` cursor-pointer bg-white h-[3rem] overflow-hidden w-[25%] py-4 flex justify-between items-center ${
                           active !== tab ? "border" : "border border-b-0"
                         } border-gray-700 mb-[1px]`}
                         onMouseEnter={() => setDisplayClose(tab)}
@@ -122,10 +122,10 @@ function App() {
                                   setActive(tabs[index])
                                 }
                               }, 5);
-                            }}
-                            className="w-[1.25rem] h-[1.25rem] mr-4 rotate-45 rounded-full bg-white hover:bg-slate-300 transition-all cursor-pointer text-lg flex justify-center items-center"
+                            }} 
+                            className=" font-thin w-[1.25rem] h-[1.25rem] mr-4 rounded-full bg-white hover:bg-slate-300 transition-all cursor-pointer text-lg flex justify-center items-center"
                           >
-                            +
+                            x
                           </span>
                         )}
                       </li>
